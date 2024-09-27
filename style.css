@@ -1,0 +1,169 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+  background-color: rgb(39, 24, 24);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+main {
+  height: 99vh;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+  padding: 5px;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  color: white;
+}
+
+.content {
+  border: 1px solid white;
+  padding: 2rem;
+  width: 300px;
+  height: 300px;
+
+  border-radius: 10%;
+}
+.content > p {
+  border: 1px solid white;
+  border-radius: 10px;
+
+  padding: 1rem;
+}
+.arrow-bottom {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  position: relative;
+  align-self: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 60px;
+  width: 60px;
+  transition: transform 0.2s;
+}
+.arrow-top {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  position: relative;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.arrow-top :nth-child(2) {
+  visibility: hidden;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(39, 24, 24);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .arrow-top {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .arrow-top :nth-child(1) {
+    display: none;
+  }
+  .arrow-top :nth-child(2) {
+    visibility: visible;
+  }
+  /* .arrow-top :nth-child(2) {
+    visibility: visible;
+  } */
+  .arrow-bottom::after {
+    content: "gello";
+  }
+  .arrow-bottom {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .content {
+    display: none;
+  }
+}
+.arrow {
+  display: flex;
+  padding: 0 5%;
+
+  margin-top: 48vh; /* poussé de la moitié de hauteur de viewport */
+  color: white;
+}
+
+/* .arrow :hover {
+    transform: scale(1.2);
+}
+.a :hover {
+        transform: scale(1.2);
+    } */
+
+/* .arrow-top :nth-child(2) {
+  visibility: hidden;
+} */
+
+.arrow-top:hover {
+  transform: scale(1.2);
+}
+.arrow-bottom:hover {
+  transform: scale(1.2);
+}
+.a:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(39, 24, 24);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  main {
+    height: 99vh;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 5px;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(39, 24, 24);
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+    /* main {
+      height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    } */
+    .arrow-top {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 30px;
+      position: relative;
+      align-self: center;
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-left: 30%;
+      margin-right: 30%;
+      height: 40px;
+      width: 40px;
+    }
+    .arrow-bottom {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -30px;
+      position: relative;
+      align-self: center;
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-left: 30%;
+      margin-right: 30%;
+      height: 40px;
+      width: 40px;
+    }
+  
+    .arrow > p {
+      display: none;
+    }
+  }
+  .arrow {
+    display: flex;
+    justify-content: space-around;
+  
+    margin-top: 48vh; /* poussé de la moitié de hauteur de viewport */
+    color: white;
+  }
+  .a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .arrow :hover {
+    transform: scale(1.2);
+  }
+  .a :hover {
+    transform: scale(1.2);
+  }
+  .arrow-top {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 40px;
+    width: 40px;
+    visibility: hidden;
+
+  }
+  .arrow-bottom {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 40px;
+    width: 40px;
+  }
+  
