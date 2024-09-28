@@ -1,0 +1,223 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+  background-color: rgb(39, 24, 24);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  }
+  main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    padding: 5px;
+    margin-top: 43vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    color: white;
+  }
+  
+  .content {
+    border: 1px solid;
+    
+    padding: 2rem;
+    width: 300px;
+    height: 300px;
+  
+    border-radius: 10%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ccc;
+  }
+  .content > p {
+  border: 1px solid white;
+  border-radius: 10px;
+  
+  padding: 1rem;
+  }
+  #profilbutton {
+    visibility: hidden;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+    margin: 0 30px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ #firstarrowbuttom {
+    visibility: hidden;
+  }
+  .arrow-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  background-color: aqua;
+  }
+  .arrow-top {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  position: relative;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  background-color: aqua;
+  visibility: hidden;
+  }
+  .a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  .arrow-top :nth-child(2) {
+  visibility: hidden;
+  }
+  .arrow-bottom :nth-child(2) {
+  visibility: hidden;
+  }
+  @media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(39, 24, 24);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  
+  .arrow-top {
+ visibility: hidden;
+  }
+  
+  .arrow-top :nth-child(1) {
+    display: none;
+  }
+  .arrow-top :nth-child(2) {
+    visibility: visible;
+  }
+  /* .arrow-top :nth-child(2) {
+    visibility: visible;
+  } */
+  
+  .arrow-bottom {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+
+    height: 60px;
+    width: 60px;
+  }
+  .arrow-bottom :nth-child(1) {
+  display: none;
+  }
+  .arrow-bottom :nth-child(2) {
+    visibility: visible;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+margin: 0 20% 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ #firstarrowbuttom {
+display: none;  }
+  .content {
+  }
+  }
+  .arrow {
+  display: flex;
+  padding: 0 5%;
+  
+  margin-top: 43vh; /* poussé de la moitié de hauteur de viewport */
+  color: white;
+  }
+  
+  /* .arrow :hover {
+    transform: scale(1.2);
+  }
+  .a :hover {
+        transform: scale(1.2);
+    } */
+  
+  /* .arrow-top :nth-child(2) {
+  visibility: hidden;
+  } */
+  
+  .arrow-top:hover {
+  transform: scale(1.2);
+  }
+  .arrow-bottom:hover {
+  transform: scale(1.2);
+  }
+  .a:hover {
+  transform: scale(1.2);
+  }
+  

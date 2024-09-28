@@ -1,0 +1,244 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+  background-color: rgb(39, 24, 24);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  }
+  main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    margin: auto 0;
+    padding: 5px;
+    margin-top: 43vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    color: white;
+  }
+  .content {
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    gap: 10%;
+  overflow: scroll;
+    
+    
+  
+  }
+
+  .content > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 5%;
+    flex-wrap: wrap;
+  }
+  .content > ul > li {
+    margin: 2%;
+}
+.content > ul > li > p > img {
+      border-radius: 40%;
+  }
+  .fit-picture {
+    display: block;
+  height: 90px;
+    width: 90px;
+  }
+#lien {
+visibility: hidden;
+}
+.divarroxsbottom {
+    display: flex;
+    
+    margin: 0 30px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ #firstarrowbuttom {
+    visibility: hidden;
+  }
+  #competencesbutton { 
+    visibility: hidden;
+  }
+  .arrow-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  position: relative;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  background-color: aqua;
+  }
+
+  .arrow-top {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  position: relative;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  visibility: hidden;
+  background-color: aqua;
+  }
+  .a {
+    display: flex;
+   
+    height: 60px;
+    width: 60px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  .arrow-bottom :nth-child(2) {
+  visibility: hidden;
+  }
+  .arrow-bottom :nth-child(2) {
+  visibility: hidden;
+  }
+  @media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(39, 24, 24);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  
+  .arrow-top {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .arrow-top :nth-child(1) {
+    display: none;
+  }
+  .arrow-top :nth-child(2) {
+    visibility: visible;
+  }
+  /* .arrow-top :nth-child(2) {
+    visibility: visible;
+  } */
+  
+  .divarroxsbottom {
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+margin: 0 20% 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ #firstarrowbuttom {
+display: none;  }
+  .arrow-bottom :nth-child(1) {
+  display: none;
+  }
+  .arrow-bottom :nth-child(2) {
+    visibility: visible;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .divarroxsbottom {
+    display: flex;
+    
+margin: 0 20% 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ #firstarrowbuttom {
+display: none;  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 10%;
+    padding: 6px;
+    flex-wrap: wrap;
+  overflow: scroll;
+  background-color: rgb(39, 24, 24);
+  }
+  }
+  .content > p {
+    width: 50px;
+    height: 50px;
+  }
+  .arrow {
+  display: flex;
+  padding: 0 5%;
+  
+  margin-top: 43vh; /* poussé de la moitié de hauteur de viewport */
+  color: white;
+  }
+  
+  /* .arrow :hover {
+    transform: scale(1.2);
+  }
+  .a :hover {
+        transform: scale(1.2);
+    } */
+  
+  /* .arrow-top :nth-child(2) {
+  visibility: hidden;
+  } */
+  
+  .arrow-top:hover {
+  transform: scale(1.2);
+  }
+  .arrow-bottom:hover {
+  transform: scale(1.2);
+  }
+  .a:hover {
+  transform: scale(1.2);
+  }
+  

@@ -15,30 +15,55 @@ flex-direction: column;
 justify-content: space-between;
 
 }
+.buttonhidden {
+  visibility: hidden;
+}
 .arrow {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto 0;
   padding: 5px;
-  margin-top: 43vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  margin-top: 43vh; 
+  transform: translateY(-50%); 
   color: white;
-}
+  scrollbar-width: none;
 
+}
 .content {
-  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  
+  border: 1px solid;
+  scrollbar-width: none;
 
   padding: 2rem;
   width: 300px;
   height: 300px;
   border-radius: 10%;
-}
-.content > p {
-border: 1px solid white;
-border-radius: 10px;
+  gap: 10%;
+overflow: scroll;
+  
+  
 
-padding: 1rem;
+}
+.content > ul >li { 
+  transition: transform 0.3s ease-in-out;
+
+}
+.content > ul > li:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+
+}
+
+
+.fit-picture {
+  display: block;
+height: 90px;
+  width: 90px;
 }
 .arrow-bottom {
 display: flex;
@@ -51,7 +76,6 @@ height: 60px;
 width: 60px;
 border: 1px solid white;
 border-radius: 50%;
-visibility: hidden;
 transition: transform 0.2s;
 background-color: aqua;
 }
@@ -68,7 +92,6 @@ width: 60px;
 border: 1px solid white;
 border-radius: 50%;
 transition: transform 0.2s;
-visibility: hidden;
 background-color: aqua;
 }
 .a {
@@ -144,8 +167,40 @@ display: none;
   visibility: visible;
 }
 .content {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  gap: 10%;
+  padding: 6px;
+  flex-wrap: wrap;
+overflow: scroll;
+background-color: rgb(39, 24, 24);
+
 }
+
+}
+
+
+.content > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0 5%;
+  flex-wrap: wrap;
+}
+.content > ul > li {
+  
+  margin: 2%;
+}
+.content > ul > li > a:hover {
+    transform: scale(1.2);
+}
+.content > ul > li > a > img {
+    border-radius: 40%;
+}
+.content > p {
+  width: 50px;
+  height: 50px;
 }
 .arrow {
 display: flex;
